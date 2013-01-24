@@ -16,4 +16,5 @@
     <depend stack="actionlib" />
     <depend stack="pluginlib" />
     <depend stack="control" />
+    <depend stack="diagnostics" />
 </stack>
