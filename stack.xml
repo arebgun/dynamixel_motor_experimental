@@ -11,4 +11,9 @@
     <url>http://ros.org/wiki/dynamixel_motor_experimental</url>
 
     <depend stack="ros" />
+    <depend stack="ros_comm" />
+    <depend stack="common_msgs" />
+    <depend stack="actionlib" />
+    <depend stack="pluginlib" />
+    <depend stack="control" />
 </stack>
