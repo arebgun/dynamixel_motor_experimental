@@ -33,7 +33,7 @@ include(ExternalProject)
 ExternalProject_Add(
     gearbox
     SVN_REPOSITORY http://gearbox.svn.sf.net/svnroot/gearbox/gearbox/tags/RELEASE_10.11
-    PATCH_COMMAND patch -d src/hokuyo_aist/python -p0 < ${PROJECT_SOURCE_DIR}/aist_python_mt.patch
+    PATCH_COMMAND patch -p1 < ${PROJECT_SOURCE_DIR}/gearbox_ros.patch
     CMAKE_ARGS -D CMAKE_BUILD_TYPE=RELEASE
         -D GEARBOX_INSTALL=${PROJECT_SOURCE_DIR}/gearbox
         -D boostPythonLib='boost_python'
