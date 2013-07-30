@@ -13,7 +13,7 @@
     <url>http://ros.org/wiki/gearbox</url>
 
     <export>
-      <cpp cflags="-I${prefix}/gearbox/include" lflags="-L${prefix}/gearbox/lib64/gearbox -Wl,-rpath,${prefix}/gearbox/lib64/gearbox -lflexiport -L${prefix}/gearbox/lib -Wl,-rpath,${prefix}/gearbox/lib"/>
+      <cpp cflags="-I${prefix}/gearbox/include" lflags="-L${prefix}/gearbox/lib`getconf LONG_BIT`/gearbox -Wl,-rpath,${prefix}/gearbox/lib`getconf LONG_BIT`/gearbox -lflexiport -L${prefix}/gearbox/lib -Wl,-rpath,${prefix}/gearbox/lib"/>
     </export>
 </package>
 
