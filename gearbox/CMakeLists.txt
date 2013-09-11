@@ -32,7 +32,7 @@ set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
 include(ExternalProject)
 ExternalProject_Add(
     gearbox
-    SVN_REPOSITORY http://gearbox.svn.sf.net/svnroot/gearbox/gearbox/tags/RELEASE_10.11
+    SVN_REPOSITORY http://svn.code.sf.net/p/gearbox/code/gearbox/tags/RELEASE_10.11/
     PATCH_COMMAND patch -p1 < ${PROJECT_SOURCE_DIR}/gearbox_ros.patch
     CMAKE_ARGS -D CMAKE_BUILD_TYPE=RELEASE
         -D GEARBOX_INSTALL=${PROJECT_SOURCE_DIR}/gearbox
